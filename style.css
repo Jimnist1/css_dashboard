@@ -11,12 +11,32 @@ body {
   grid-column: 1;
   grid-row: 1 / 3;
 }
-.userInput {
-  grid-column: 2;
-  grid-row: 1;
-}
 .contentCont {
   background-color: rgb(155, 154, 154);
   grid-column: 2;
   grid-row: 2 / 3;
+}
+.userCont {
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.userInput {
+  grid-column: 1;
+  grid-row: 1;
+}
+.userProfileCont {
+  grid-column: 2;
+  grid-row: 1;
+}
+.welcomeMessage {
+  grid-column: 1;
+  grid-row: 2;
+}
+.buttonCont {
+  grid-column: 2;
+  grid-row: 2;
 }
