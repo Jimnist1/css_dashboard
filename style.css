@@ -15,6 +15,7 @@ body {
 }
 .sidebar {
   position: fixed;
+  display: grid;
 }
 .userCont {
   padding: 20px 40px;
@@ -48,11 +49,13 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 50px 1fr 50px 1fr;
+  box-shadow: 0px 10px 20px grey inset;
 }
 .cardTitle1 {
   grid-column: 1;
   grid-row: 1;
   padding-left: 20px;
+  align-self: end;
 }
 .projectCardsCont {
   grid-row: 2 / 5;
@@ -67,6 +70,7 @@ body {
 .cardTitle2 {
   grid-column: 2;
   grid-row: 1;
+  align-self: end;
 }
 .annoucementsCont {
   grid-row: 2;
@@ -75,6 +79,7 @@ body {
 .cardTitle3 {
   grid-row: 3;
   grid-column: 2;
+  align-self: end;
 }
 .trendingCont {
   grid-row: 4;
@@ -92,15 +97,20 @@ body {
   border-radius: 5px;
   padding: 20px 15px;
 }
+.cardTitle1,
+.cardTitle2,
+.cardTitle3 {
+  font-size: 24px;
+}
 .keyDashboardIcon {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 .cardIcon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 .dashLinksImg {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
