@@ -21,7 +21,7 @@ body {
   gap: 40px;
 }
 .userCont {
-  padding: 20px 40px;
+  padding: 10px 80px;
   grid-column: 2;
   grid-row: 1;
   display: grid;
@@ -31,10 +31,18 @@ body {
 .userInput {
   grid-column: 1;
   grid-row: 1;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
 }
 .userProfileCont {
   grid-column: 2;
   grid-row: 1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4 minmax(50px, 1fr));
+  align-items: center;
 }
 .welcomeMessage {
   grid-column: 1;
@@ -43,6 +51,10 @@ body {
 .buttonCont {
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  gap: 40px;
+  align-items: center;
 }
 /*Content Layout*/
 .contentCont {
@@ -91,6 +103,14 @@ body {
 }
 
 /*Specific decorations */
+button {
+  border: none;
+  background-color: rgb(0, 174, 255);
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+}
 .card1 .projectCardsCont {
   height: 150px;
 }
@@ -98,7 +118,7 @@ body {
 .card2,
 .card3 {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px 15px;
   box-shadow: 5px 5px 5px grey;
 }
@@ -119,6 +139,7 @@ body {
 }
 .dashLink {
   font-size: 30px;
+  font-weight: bold;
   display: inline-block;
   vertical-align: middle;
 }
@@ -140,4 +161,51 @@ body {
 .dashTitle {
   display: inline-block;
   vertical-align: middle;
+}
+.userSearch {
+  background-color: rgb(202, 202, 202);
+  border-radius: 20px;
+  width: 600px;
+  height: 30px;
+  border: none;
+}
+.searchIcon,
+.bellIcon {
+  height: 35px;
+}
+.bellIcon {
+  grid-column: 2;
+}
+.cardActions img {
+  padding: 15px;
+}
+.largerProfilePic {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+.largerProfilePic {
+  height: 90px;
+}
+.mainProfilePic {
+  height: 50px;
+  border-radius: 50%;
+  grid-column: 3;
+}
+.messageText {
+  display: inline-block;
+  vertical-align: middle;
+}
+.messageText {
+  font-size: 15px;
+  font-weight: bold;
+}
+.username {
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 4;
+}
+.usernameLarge {
+  font-size: 25px;
 }
